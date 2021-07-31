@@ -1,5 +1,8 @@
 name: 'markdown-latex-math-render'
 description: 'Render latex math equation in markdown files'
+branding:
+  icon: 'align-justify'  
+  color: 'blue'
 inputs:
   markdown-files:
     description: 'which file to render'
