@@ -13,7 +13,7 @@ jobs:
       - name: render latex formulas
         uses: kinglittleq/markdown-latex-math-render@v0.1
         with:
-          markdown-file: md_files/*.md
+          markdown-files: md_files/*.md
           output-dir: .
       - name: Commit
         run: |
