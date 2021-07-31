@@ -1,0 +1,17 @@
+name: 'markdown-latex-math-render'
+description: 'Render latex math equation in markdown files'
+inputs:
+  markdown-files:
+    description: 'which file to render'
+    required: true
+  output-dir:
+    description: 'output directory'
+    required: true
+    default: ''
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.markdown-file }}
+    - ${{ inputs.output-dir }}

@@ -1,0 +1,16 @@
+name: test
+on:
+  push:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Install Python3
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.7'
+      - name: Test
+        run: python -m unittest tests/test.py
